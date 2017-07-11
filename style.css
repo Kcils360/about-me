@@ -1,4 +1,39 @@
-* {
-color: blue;
-  
+body {
+  padding: 3px;
+}
+
+header {
+  background-color: #deedef;
+  padding: 3px;
+  border: solid #dddd66 2px;
+}
+
+h1 {
+  color: #1a3351;
+}
+header p {
+  color: black;
+  font-size: 15px;
+}
+
+
+div {
+  background-color: #f0ead6;
+  padding: 3px;
+  margin: 2px;
+  border: solid black 2px;
+
+}
+
+
+.subjects {
+  font-family: Arial;
+}
+
+span {
+  color: #556b2f;
+}
+
+footer {
+
 }
