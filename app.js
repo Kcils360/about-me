@@ -80,17 +80,23 @@ if (pizza === 'yes' || pizza === 'y') {
 
 var x = 0;
 
-while (x < 5) {
+while (x < 4) {
   var topings = parseInt(prompt('How many toppings do I prefer on my pizza?'));
   if (topings < 4) {
     alert('That\s almost plain, more please!');
     x++;
   } else if (topings > 4) {
     alert('Dude, don\'t overload the pie! Try again.');
-    x++
+    x++;
   } else if (topings === 4) {
     alert('Bingo, I think 4 toppings is optimal pizza yummage.');
     break;
+  } else if (x = 5) {
+    alert('Sorry, you are out of guesses.  Reset and try again.');
+    window.location.reload();
+  } else {
+    alert('Please respond with an integer.');
+    x++;
   }
 }
 
