@@ -1,7 +1,7 @@
 'use strict';
 
 alert ('Let\'s play a guessing game about me!');
-
+// Question 1
 var cityBorn = prompt('Was I born in Washington?') .toLowerCase();
 
 if (cityBorn === 'yes' || cityBorn === 'y') {
@@ -16,7 +16,7 @@ if (cityBorn === 'yes' || cityBorn === 'y') {
   alert ('Please answer with "yes" or "no"');
   console.log('City question user stated ' + cityBorn);
 }
-
+// Question 2
 var married = prompt('Am I married?') .toLowerCase();
 
 if (married === 'yes' || married === 'y') {
@@ -31,8 +31,7 @@ if (married === 'yes' || married === 'y') {
   alert ('Please answer with "yes" or "no"');
   console.log('Married question user stated ' + married);
 }
-
-
+// Question 3
 var army = prompt('Was I ever in the Army?') .toLowerCase();
 
 if (army === 'yes' || army === 'y') {
@@ -47,7 +46,7 @@ if (army === 'yes' || army === 'y') {
   alert ('Please answer with "yes" or "no"');
   console.log('Army question user stated ' + army);
 }
-
+// Question 4
 var degree = prompt('Do I have a degree?') .toLowerCase();
 
 if (degree === 'yes' || degree === 'y') {
@@ -62,22 +61,7 @@ if (degree === 'yes' || degree === 'y') {
   alert ('Please answer with "yes" or "no"');
   console.log('Degree question user stated ' + degree);
 }
-
-var codeFellows = prompt('Is Code Fellows an awesome school?') .toLowerCase();
-
-if (codeFellows === 'yes' || codeFellows === 'y') {
-  alert ('You bet it is!  Let\'s learn some code!');
-  console.log('CodeFellows question user stated ' + codeFellows);
-
-} else if (codeFellows === 'no' || codeFellows === 'n') {
-  alert ('What are you smoking? Code Fellows is the greatest!');
-  console.log('CodeFellows question user stated ' + codeFellows);
-
-} else {
-  alert ('Please answer with "yes" or "no"');
-  console.log('CodeFellows question user stated ' + codeFellows);
-}
-
+// Question 5
 var pizza = prompt('Would I kill for some pizza?') .toLowerCase();
 
 if (pizza === 'yes' || pizza === 'y') {
@@ -92,8 +76,23 @@ if (pizza === 'yes' || pizza === 'y') {
   alert ('Please answer with "yes" or "no"');
   console.log('Pizza question user stated ' + pizza);
 }
+// Question 6
 
+var x = 0;
 
+while (x < 5) {
+  var topings = parseInt(prompt('How many toppings do I prefer on my pizza?'));
+  if (topings < 4) {
+    alert('That\s almost plain, more please!');
+    x++;
+  } else if (topings > 4) {
+    alert('Dude, don\'t overload the pie! Try again.');
+    x++
+  } else if (topings === 4) {
+    alert('Bingo, I think 4 toppings is optimal pizza yummage.');
+    break;
+  }
+}
 
 
 
