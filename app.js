@@ -1,4 +1,6 @@
 'use strict';
+// Number of correct answers
+var numCorrect = [];
 
 alert ('Let\'s play a guessing game about me!');
 // Question 1
@@ -11,7 +13,7 @@ if (cityBorn === 'yes' || cityBorn === 'y') {
 } else if (cityBorn === 'no' || cityBorn === 'n') {
   alert ('Indeed, I was born in Denver.');
   console.log('City question user stated ' + cityBorn);
-
+  numCorrect.push (1);
 } else {
   alert ('Please answer with "yes" or "no"');
   console.log('City question user stated ' + cityBorn);
@@ -22,6 +24,7 @@ var married = prompt('Am I married?') .toLowerCase();
 if (married === 'yes' || married === 'y') {
   alert ('Correct!  Happily, since 2005!');
   console.log('Married question user stated ' + married);
+  numCorrect.push (1);
 
 } else if (married === 'no' || married === 'n') {
   alert ('In fact I am, since 2005.');
@@ -37,6 +40,7 @@ var army = prompt('Was I ever in the Army?') .toLowerCase();
 if (army === 'yes' || army === 'y') {
   alert ('Yep!  I joined in 2006.');
   console.log('Army question user stated ' + army);
+  numCorrect.push (1);
 
 } else if (army === 'no' || army === 'n') {
   alert ('Wrong, I joined the Army in 2006.');
@@ -56,6 +60,7 @@ if (degree === 'yes' || degree === 'y') {
 } else if (degree === 'no' || degree === 'n') {
   alert ('Correct.  I havne\'t attended much school.');
   console.log('Degree question user stated ' + degree);
+  numCorrect.push (1);
 
 } else {
   alert ('Please answer with "yes" or "no"');
@@ -71,6 +76,7 @@ if (pizza === 'yes' || pizza === 'y') {
 } else if (pizza === 'no' || pizza === 'n') {
   alert ('Right, because murder is illegal, but I really do want some pizza.');
   console.log('Pizza question user stated ' + pizza);
+  numCorrect.push (1);
 
 } else {
   alert ('Please answer with "yes" or "no"');
@@ -81,31 +87,43 @@ if (pizza === 'yes' || pizza === 'y') {
 var x = 0;
 
 while (x < 4) {
-  var topings = parseInt(prompt('How many toppings do I prefer on my pizza?'));
-  if (topings < 4) {
+  var numTopings = parseInt(prompt('How many toppings do I prefer on my pizza?'));
+  if (numTopings < 4) {
     alert('That\s almost plain, more please!');
     x++;
-  } else if (topings > 4) {
+  } else if (numTopings > 4) {
     alert('Dude, don\'t overload the pie! Try again.');
     x++;
-  } else if (topings === 4) {
+  } else if (numTopings === 4) {
     alert('Bingo, I think 4 toppings is optimal pizza yummage.');
     break;
-  } else if (x = 5) {
-    alert('Sorry, you are out of guesses.  Reset and try again.');
-    window.location.reload();
+  // } else if (x === 4) {
+  //   alert('Sorry, you are out of guesses.  Reset and try again.');
+  //   window.location.reload();
   } else {
     alert('Please respond with an integer.');
     x++;
+  }
+}
+// Question 7
+var favTopings = ['pepperoni', 'sausage', 'jalepeno', 'cheese'];
+var numGuess = 6;
+
+while (numGuess <= 6) {
+  var ansToping = prompt('What is one of my favorite pizza toppings?').toLowerCase();
+  for (var i = 0; i < favTopings.length; i--) {
+    if (ansToping !== favTopings[i]) {
+      numGuess = (i - 1);
+    } else {
+      alert('Nice guess! ' + ansToping + ' makes a pizza great!' );
+      break;
+      break;
+    }
+
   }
 }
 
 
 
 
-
-
-
-
-
-alert ('Thank you for playing!  I hope you learned something.');
+alert ('You got' + numCorrect + ' answers correct. Thank you for playing!  I hope you learned something.');
