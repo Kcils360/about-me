@@ -88,7 +88,7 @@ if (pizza === 'yes' || pizza === 'y') {
 var x = 0;
 while (x < 4 && numTopings !== 4) {
   var numTopings = parseInt(prompt('How many toppings do I prefer on my pizza?'));
-  console.log('Number question stated ' + numToping);
+  console.log('Number question stated ' + numTopings);
   if (numTopings < 4) {
     alert('That\s almost plain, more please!');
     x++;
@@ -126,7 +126,7 @@ while (guessTopping > 0) {
   }
   if (guessTopping > 0) {
     guessTopping--;
-    alert('Guess again.' + g + ' guesses left.');
+    alert('Guess again.' + guessTopping + ' guesses left.');
   }
   if (guessTopping === 0) {
     alert('Out of guesses.');
