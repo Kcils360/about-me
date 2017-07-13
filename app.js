@@ -106,20 +106,22 @@ while (x < 4 && numTopings !== 4) {
   }
 }
 // Question 7
-var favTopings = ['pepperoni', 'sausage', 'jalepeno', 'cheese'];
+var favTopings = ['PEPPERONI', 'SAUSAGE', 'JALEPENO', 'CHEESE'];
 var g = 6;
 
 while (g > 0) {
-  var ansToping = prompt('What is one of my favorite pizza toppings?').toLowerCase();
+  var ansToping = prompt('What is one of my favorite pizza toppings?').toUpperCase();
   for (var i = 0; i < favTopings.length; i++) {
-    if (ansToping === favTopings[i]) {
-      alert('Nice guess! ' + ansToping + ' makes a pizza great!' );
+    if (ansToping === favTopings[0] || [1] || [2] || [3]) {
+      alert('Nice guess, ' + ansToping + ' makes a pizza great!' );
       g = 0;
-      console.log(g);
+      console.log(ansToping);
+      break;
     } else {
+      alert('Please guess again.');
       g -= 1;
       console.log(g);
-      break;
+    
     }
 
     }
