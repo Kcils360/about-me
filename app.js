@@ -153,3 +153,33 @@ function question7(){
 question7();
   alert('You got ' + numCorrect.length + ' answers correct. Thank you for playing!  I hope you learned something.');
 // this works now
+
+// Questions in Array
+// Response
+var respArray = ['no i was born in colorado ', 'correct i was born in colorado', 'correct I am married', 'i am in fact married', 'correct i was in the army', 'wrong i was in the army', 'correct i do not have a degree', 'unfortunately i do not', 'correct because murder is illegal, but i do want pizza', 'wrong! murder is illegal, i still want pizza'];
+
+// Questions
+var stateBorn = 'was i born in WA';
+var married = 'am i married';
+var army = 'was i in the army';
+var degree = 'do i hae a degree';
+var pizza = 'would i kill for pizza';
+
+var quesArray = [stateBorn, married, army, degree, pizza];
+
+// User Answer boolean
+var possAns = ['Y', 'YES', 'N', 'NO'];
+
+// var userResponse = prompt(quesArray[i]).toUpperCase();
+// if (userResponse === possAns[i]){
+//   alert(respArray[i]);
+// }
+
+
+
+var userResponse = prompt(quesArray[0]).toUpperCase();
+if (userResponse === possAns[2 || 3]){
+  alert(respArray[1]);
+} else {
+  alert(respArray[0]);
+}
