@@ -1,6 +1,12 @@
+html {
+    background-color: #FFFFFF;
+    background: url("https://wallpaperscraft.com/image/delicious_food_olives_pizza_mushrooms_cheese_87196_3840x1200.jpg") no-repeat center center;
+    background-size: contain;
+    background-position: top;
+}
+
 body {
   padding: 3px;
-  background-image: linear-gradient(0deg, #001335, rgb(255,255,255));
   margin-top: 0px;
 }
 
@@ -24,6 +30,8 @@ h1 {
 }
 
 div {
+  float: left;
+  width: 450px;
   background-color: #f0ead6;
   padding: 3px;
   margin: 7px;
@@ -36,13 +44,17 @@ div {
   font-family: Arial;
 }
 
+.school {
+  float: right;
+}
+
 span {
   color: #556b2f;
   background-color: #000000;
 }
 
 .army {
-
+  float: top;
   background-image: url("http://www.popsci.com/sites/popsci.com/files/styles/large_1x_/public/import/2013/images/2011/07/Flickr_-_The_U.S.jpeg?itok=htyhZlUW");
   background-position-y: 50%;
 }
@@ -54,12 +66,14 @@ span {
 }
 
 footer {
+  position: relative;
+  float: left;
   font-size: 60px;
   color: red;
   text-align: center;
 }
 .pizza1 {
-  /*450 x 219*/
+
   height: 84px;
   width: 125px;
 }
