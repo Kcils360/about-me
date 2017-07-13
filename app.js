@@ -21,6 +21,7 @@ function question1(){
   }
 }
 question1();
+
   // Question 2
 function question2(){
   var married = prompt('Am I married?') .toLowerCase();
@@ -59,6 +60,7 @@ function question3(){
   }
 }
 question3();
+
   // Question 4
 function question4(){
   var degree = prompt('Do I have a degree?') .toLowerCase();
@@ -77,10 +79,8 @@ function question4(){
     console.log('Degree question user stated ' + degree);
   }
 }
-<<<<<<< HEAD
-// //
-// Question 6
 
+// Question 6
 var x = 0;
 while (x < 4 && numTopings !== 4) {
   var numTopings = parseInt(prompt('How many toppings do I prefer on my pizza?'));
@@ -93,10 +93,11 @@ while (x < 4 && numTopings !== 4) {
     alert('Dude, don\'t overload the pie! Try again.');
     x++;
   } else if (numTopings === 4) {
-    alert('Bingo, I think 4 toppings is optimal pizza yummage.');
-=======
+    alert('Bingo, I think 4 toppings is optimal pizza yummage.')
+}
 question4();
-  // Question 5
+
+// Question 5
 function question5(){
   var pizza = prompt('Would I kill for some pizza?') .toLowerCase();
 
@@ -107,7 +108,6 @@ function question5(){
   } else if (pizza === 'no' || pizza === 'n') {
     alert ('Right, because murder is illegal, but I really do want some pizza.');
     console.log('Pizza question user stated ' + pizza);
->>>>>>> def0d3254dc3045fc9519751f75f70ea1eee6b4f
     numCorrect.push (1);
 
   } else {
@@ -142,14 +142,13 @@ function question6(){
       x++;
     }
   }
-<<<<<<< HEAD
+
   if (guessTopping > 0) {
     guessTopping--;
     alert('Guess again.' + guessTopping + ' guesses left.');
   }
   if (guessTopping === 0) {
     alert('Out of guesses.');
-=======
 }
 question6();
   // Question 7
@@ -175,8 +174,8 @@ function question7(){
     if (guessTopping === 0) {
       alert('Out of guesses.');
     }
->>>>>>> def0d3254dc3045fc9519751f75f70ea1eee6b4f
   }
 }
+
 question7();
   alert('You got ' + numCorrect.length + ' answers correct. Thank you for playing!  I hope you learned something.');
