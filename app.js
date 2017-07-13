@@ -88,6 +88,7 @@ if (pizza === 'yes' || pizza === 'y') {
 var x = 0;
 while (x < 4 && numTopings !== 4) {
   var numTopings = parseInt(prompt('How many toppings do I prefer on my pizza?'));
+  console.log('Number question stated ' + numToping);
   if (numTopings < 4) {
     alert('That\s almost plain, more please!');
     x++;
@@ -107,34 +108,29 @@ while (x < 4 && numTopings !== 4) {
     x++;
   }
 }
+
 // Question 7
 var favTopings = ['PEPPERONI', 'SAUSAGE', 'JALEPENO', 'CHEESE'];
-var g = 6;
+var guessTopping = 6;
 
-while (g > 0) {
+while (guessTopping > 0) {
   var ansToping = prompt('What is one of my favorite pizza toppings?').toUpperCase();
+  console.log('Favorite question stated ' + ansToping);
   for (var i = 0; i < favTopings.length; i++) {
     if (ansToping === favTopings[i]) {
       alert('Nice guess, ' + ansToping + ' makes a pizza great!' );
-      g = -1;
-      console.log(ansToping);
+      guessTopping = -1;
       numCorrect.push (1);
       break;
     }
   }
-  if (g > 0) {
-    g--;
+  if (guessTopping > 0) {
+    guessTopping--;
     alert('Guess again.' + g + ' guesses left.');
   }
-  if (g === 0) {
+  if (guessTopping === 0) {
     alert('Out of guesses.');
   }
 }
-
-
-// if (g > 0){
-//   alert('You have' + g + ' guesses left.');
-//   g++;
-
 
 alert('You got ' + numCorrect.length + ' answers correct. Thank you for playing!  I hope you learned something.');
