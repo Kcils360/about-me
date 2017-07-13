@@ -114,9 +114,12 @@ while (g > 0) {
   for (var i = 0; i < favTopings.length; i++) {
     if (ansToping === favTopings[i]) {
       alert('Nice guess! ' + ansToping + ' makes a pizza great!' );
-      break;
+      g = 0;
+      console.log(g);
     } else {
-      g--;
+      g -= 1;
+      console.log(g);
+      break;
     }
 
     }
