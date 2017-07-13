@@ -1,6 +1,6 @@
 html {
     background-color: black;
-    background-image: image(url("/home/gregory/codefellows/201/about-me/Resources/pizza-background.jpg")) no-repeat center center;
+    /*background-image: image(url("/home/gregory/codefellows/201/about-me/Resources/pizza-background.jpg")) no-repeat center center;*/
     background-size: contain;
     background-position: top;
 }
@@ -56,7 +56,7 @@ span {
 
 .army {
   margin: auto;
-  background-image: url("/home/gregory/codefellows/201/about-me/Resources/armypic.jpeg");
+  /*background-image: url("/home/gregory/codefellows/201/about-me/Resources/armypic.jpeg");*/
   background-position-y: 50%;
 }
 
