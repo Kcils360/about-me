@@ -1,6 +1,6 @@
 html {
-    background-color: #FFFFFF;
-    background: url("https://wallpaperscraft.com/image/delicious_food_olives_pizza_mushrooms_cheese_87196_3840x1200.jpg") no-repeat center center;
+    background-color: black;
+    background-image: image(url("/home/gregory/codefellows/201/about-me/Resources/pizza-background.jpg")) no-repeat center center;
     background-size: contain;
     background-position: top;
 }
@@ -29,7 +29,7 @@ h1 {
   color: #1a3351;
 }
 
-div {
+section {
   /*float: left;*/
   width: 450px;
   background-color: #f0ead6;
@@ -55,8 +55,8 @@ span {
 }
 
 .army {
-  float: top;
-  background-image: url("http://www.popsci.com/sites/popsci.com/files/styles/large_1x_/public/import/2013/images/2011/07/Flickr_-_The_U.S.jpeg?itok=htyhZlUW");
+  margin: auto;
+  background-image: url("/home/gregory/codefellows/201/about-me/Resources/armypic.jpeg");
   background-position-y: 50%;
 }
 
