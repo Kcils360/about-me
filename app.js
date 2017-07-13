@@ -152,3 +152,4 @@ function question7(){
 }
 question7();
   alert('You got ' + numCorrect.length + ' answers correct. Thank you for playing!  I hope you learned something.');
+// this works now
