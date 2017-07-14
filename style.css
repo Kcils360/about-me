@@ -1,6 +1,6 @@
 html {
-    background-color: black;
-    background-image: image(url("/home/gregory/codefellows/201/about-me/Resources/pizza-background.jpg")) no-repeat center center;
+    /*background-color: black;*/
+    background-image: url("/home/gregory/codefellows/201/about-me/Resources/pizza-background.jpg");
     background-size: contain;
     background-position: top;
 }
