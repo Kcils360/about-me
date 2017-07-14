@@ -1,6 +1,6 @@
 html {
     background-color: black;
-    /*background-image: image(url("/home/gregory/codefellows/201/about-me/Resources/pizza-background.jpg")) no-repeat center center;*/
+    background-image: image(url("/home/gregory/codefellows/201/about-me/Resources/pizza-background.jpg")) no-repeat center center;
     background-size: contain;
     background-position: top;
 }
@@ -29,8 +29,12 @@ h1 {
   color: #1a3351;
 }
 
-section {
-  /*float: left;*/
+main {
+  position: relative;
+}
+
+ul {
+  block-type: inline;
   width: 450px;
   background-color: #f0ead6;
   padding: 13px;
@@ -45,8 +49,15 @@ section {
   padding: inherit;
 }
 
+.family {
+  margin: auto;
+}
+
 .school {
-  /*float: right;*/
+  position: relative;
+  float: right;
+
+  margin: auto;
 }
 
 span {
@@ -56,7 +67,7 @@ span {
 
 .army {
   margin: auto;
-  /*background-image: url("/home/gregory/codefellows/201/about-me/Resources/armypic.jpeg");*/
+  background-image: url("/home/gregory/codefellows/201/about-me/Resources/armypic.jpeg");
   background-position-y: 50%;
 }
 
