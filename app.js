@@ -50,6 +50,7 @@ function question1(){
   } else {
     alert ('Please answer with "yes" or "no"');
     console.log('City question user stated ' + cityBorn);
+
   }
 }
 question1();
@@ -216,5 +217,5 @@ function question7(){
 }
 question7();
 console.log('User got ' + numCorrect.length + ' correct');
-alert('You got ' + numCorrect.length + ' answers correct out of 7. Thank you for playing, I hope you learned something!');
+alert('You got ' + numCorrect.length + ' answers correct out of 7. Thank you for playing, ' + userName + ' I hope you learned something!');
 // this works now
