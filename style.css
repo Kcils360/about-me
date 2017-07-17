@@ -9,13 +9,15 @@ body {
 }
 
 header {
-  background-image: url("/home/gregory/codefellows/201/about-me/Resources/italian-pizza.jpg");
+  background-image: url("https://lh3.googleusercontent.com/PDtfw_ECaEiA-MsoNtsPZynFbYfg7yW52r5ToNze_1lUT2xvrrqhfbMPrbcgN_HTtqdHC9qOQq7IRrsCycsfLWGMOyrgIP62patOE_ChGQ2rUIM8q2LLeWR9L6pC7nLJ3aPbv6GuSezd5sxTfWzTyGXuWpMMACmwtarv-TbkAJUDnsT_rMQkuKAOl19Qn2Hl0HGYg5SvgacwdyPxT2p4nxdhVYnFZktgG0uBoqJao0IRxomm5Q1TUoe_w9JniJ9cf4WOr2DptcEbJgxxwpb4KJdNbnz8iz4wVmUhzhom_st5NaeDnTwVPpXOCYIRIG3IiEjtWcBjkOFSPZxqcAp-Uq0eZvDx7Med03l7ldNOToT_bauxmdC9UqF3YcHgMIIzIGdExOXwS60CbCoaN3RXoYrZ03hKQVwZc_kNq4SuXW3bd_OPLl-Zmb4QStGKPdTDlJDzVpc3FFvJ1JHwD8akZHmcCUK2-eo6bDAlKdyZAm65HDqyX9L2syZr-hA2UifMb85S3soOw3kezfdQK3Zwqi0l1GufMmSTOCCPrP7Rs2_-mtlsbLocLyK9WpIpOMADIQDXhwTPVqppJAGseWwTXTuhLNAt23KmHRljyv4OBJEmabBPAb17EsjW=w1716-h965-no");
   height: 800px;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   position: relative;
   margin: 0px;
+  font-family: 'Raleway', sans-serif;
 
 }
 header li {
@@ -50,7 +52,7 @@ header p {
   bottom: 0;
   margin-top: 50%;
   /*height: 300px;*/
-  background-image: linear-gradient(0,#1e130c,#9a8478 );
+  /*background-image: linear-gradient(0,#1e130c,#9a8478 );*/
 
 }
 
@@ -74,8 +76,10 @@ main ul {
 
 
 .subjects {
-  font-family: Arial;
+  font-family: 'Lemonada', cursive;
+  margin: 5px;
   padding: inherit;
+  font-size: 50px;
 }
 
 .family {
@@ -85,24 +89,44 @@ main ul {
   background-color: 0,0,0,0;
 }
 .familyThings {
-  padding: 30px;
+  padding: 10px 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
 }
 
 .school {
   position: relative;
-  float: top;
+  float: right;
   margin: auto;
+  height: 533px;
+  max-width: 500px;
+  font-family: 'Source Sans Pro';
+  font-size: 25px;
+}
+
+
+.topTen {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    max-width: 500px;
+    position: relative;
+
+
 }
 
 span {
   color: #556b2f;
   background-color: #000000;
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 .army {
+  background-image: url("https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/1915302_1174377751972_1603762_n.jpg?oh=0e6dab9b35804f747e58777055c7dcbb&oe=59F3BBD3");
+  background-repeat: no-repeat;
+  background-position-y: 32%;
+  background-size: cover;
   margin: auto;
-  background-image: url("/home/gregory/codefellows/201/about-me/Resources/armypic.jpeg");
-  background-position-y: 50%;
+
 }
 
 .army p {
