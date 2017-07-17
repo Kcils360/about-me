@@ -11,15 +11,16 @@ var numCorrect = [];
 alert ('Let\'s play a guessing game about me!');
 var userName = prompt('First, what is your name?', 'Name Here');
 alert ('Thank you ' + userName + '. Click OK to begin.');
+console.log('User name is ' + userName);
 
 // Questions in Array
-// Questions
-var quesArray = ['was i born in WA', 'am i married', 'was i in the army', 'do i hae a degree', 'would i kill for pizza'];
-// Response
-var respArray = ['no i was born in colorado ', 'correct i was born in colorado', 'correct I am married', 'i am in fact married', 'correct i was in the army', 'wrong i was in the army', 'correct i do not have a degree', 'unfortunately i do not', 'correct because murder is illegal, but i do want pizza', 'wrong! murder is illegal, i still want pizza'];
-// User Answer boolean
-var possAns = ['Y', 'YES', 'N', 'NO'];
-
+// // Questions
+// var quesArray = ['was i born in WA', 'am i married', 'was i in the army', 'do i hae a degree', 'would i kill for pizza'];
+// // Response
+// var respArray = ['no i was born in colorado ', 'correct i was born in colorado', 'correct I am married', 'i am in fact married', 'correct i was in the army', 'wrong i was in the army', 'correct i do not have a degree', 'unfortunately i do not', 'correct because murder is illegal, but i do want pizza', 'wrong! murder is illegal, i still want pizza'];
+// // User Answer boolean
+// var possAns = ['Y', 'YES', 'N', 'NO'];
+//
 
 
 // Question 1
@@ -158,17 +159,17 @@ question5();
 //
 //   // Question 6
 function question6(){
-  var x = 0;
-  while (x < 4 && numTopings !== 4) {
-    var numTopings = parseInt(prompt('How many toppings do I prefer on my pizza?'));
-    console.log('Number question stated ' + numTopings);
+  var x = 4;
+  while (x > 0 && numTopings !== 4) {
+    var numTopings = parseInt(prompt('How many toppings do I prefer on my pizza?', 'Number'));
+    console.log('Number topping question stated ' + numTopings);
     if (numTopings < 4) {
       alert('That\s almost plain, more please!');
-      x++;
+      x--;
 
     } else if (numTopings > 4) {
       alert('Dude, don\'t overload the pie! Try again.');
-      x++;
+      x--;
     } else if (numTopings === 4) {
       alert('Bingo, I think 4 toppings is optimal pizza yummage.');
       numCorrect.push (1);
@@ -177,27 +178,23 @@ function question6(){
         // break;
     //   window.location.reload();
     } else {
-      alert('Please respond with an integer.');
-      x++;
+      alert('Please press a number.');
+      x--;
     }
   }
-
-  if (guessTopping > 0) {
-    guessTopping--;
-    alert('Guess again.' + guessTopping + ' guesses left.');
+  if (x === 0) {
+    alert('No more guesses. I prefer 4 toppings for optimal yummage.');
   }
-  if (guessTopping === 0) {
-    alert('Out of guesses.');
 }
 question6();
   // Question 7
 function question7(){
   var favTopings = ['PEPPERONI', 'SAUSAGE', 'JALEPENO', 'CHEESE'];
-  var guessTopping = 6;
+  var guessTopping = 7;
 
   while (guessTopping > 0) {
-    var ansToping = prompt('What is one of my favorite pizza toppings?').toUpperCase();
-    console.log('Favorite question stated ' + ansToping);
+    var ansToping = prompt('What is one of my favorite pizza toppings?', 'Topping').toUpperCase();
+    console.log('Favorite topping question stated ' + ansToping);
     for (var i = 0; i < favTopings.length; i++) {
       if (ansToping === favTopings[i]) {
         alert('Nice guess, ' + ansToping + ' makes a pizza great!' );
@@ -206,17 +203,18 @@ function question7(){
         break;
       }
     }
-    if (guessTopping > 0) {
+    if (guessTopping > 1) {
       guessTopping--;
-      alert('Guess again.' + guessTopping + ' guesses left.');
+      alert('Sorry, incorrect. ' + (guessTopping - 1) + ' guesses left.');
     }
-    if (guessTopping === 0) {
+    if (guessTopping === 1) {
       alert('Out of guesses.');
+      guessTopping = -1;
+      break;
     }
   }
 }
-
 question7();
-
-alert('You got ' + numCorrect.length + ' answers correct. Thank you for playing!  I hope you learned something.');
+console.log('User got ' + numCorrect.length + ' correct');
+alert('You got ' + numCorrect.length + ' answers correct out of 7. Thank you for playing, I hope you learned something!');
 // this works now
